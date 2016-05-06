@@ -1,0 +1,496 @@
+/*公共样式*/
+body {
+  font-size: 12px;
+  color: #888;
+  font-family: "microSoft Yahei";
+}
+p ,div {
+  padding: 0;
+  margin: 0;
+}
+em {
+  font-style: normal;
+}
+
+a , 
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: #888;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1; /*IE/7/6*/
+}
+
+a.font14 {
+  font-size: 14px;
+  color: #333;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+
+/*通用图标*/
+[class^="icon_"]{
+    background: url("../images/icons-set.png") no-repeat;
+    /*background-size: 200px 200px;*/
+}
+
+
+/*顶部通栏*/
+ .jm_topBar {
+  width: 100%;
+  height: 40px;
+  background-color: #f8fbff;
+  border-bottom: 1px solid #e7ebed;
+  line-height: 40px;
+}
+
+/*微博微信图标*/
+.left_info .my_icon_box {
+  display: inline-block;
+  height: 26px;
+  width: 70px;
+  position: absolute;
+  margin-top: 8px;
+  margin-left: 5px;
+  /*background-color: red;*/
+}
+.my_icon_box_wb ,
+.my_icon_box_wx {
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+  border: 1px solid #e0e0e0;
+  border-radius: 50%;
+  position: absolute;
+  overflow: hidden;
+}
+.my_icon_box_wb {
+  left: 0px;
+}
+.my_icon_box_wx {
+  right: 1px;
+}
+.boxwb_icons {
+  display: inline-block;
+  width: 27px;
+  height: 55px;
+  float: left;
+}
+.boxwx_icons {
+  display: inline-block;
+  width: 27px;
+  height: 55px;
+  float: right;
+}
+ .my_icon_box .icon_wb,
+.my_icon_box .icon_wx,
+.my_icon_box .icon_wbnext,
+.my_icon_box .icon_wxnext {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.left_info .icon_wb {
+  background-position: -2px -192px;
+}
+ .left_info .icon_wx {
+  background-position: -22px -192px;
+}
+ .icon_wbnext {
+  background-color: green;
+  top: 27px;
+  background-position: -2px -216px;
+ }
+ .icon_wxnext {
+  background-color: green;
+  top: 27px;
+  background-position: -25px -216px;
+  transition: all 1s;
+ } 
+.boxwb_icons,
+.boxwx_icons {
+  transition: all 0.5s linear;
+}
+.boxwb_icons:hover,.boxwx_icons:hover {
+  transform: translate(0, -50%);
+}
+
+.right_info ul li {
+  float: left;
+  line-height: 40px;
+  padding: 0 25px;
+  border-right: 1px solid #e0e0e0;
+}
+.right_info ul li:last-child {
+  border-right: 0;
+}
+.right_info ul li:hover , .right_info ul li:hover a{
+  background-color: #06B5FF;
+  color: #fff;
+}
+
+/*导航*/
+.my-navbar {
+    background-color: #fff;
+    border-color: #e7e7e7;
+    border: 0;
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 0;
+}
+.my-navbar .navbar-brand {
+    color: #777;
+    height: 80px;
+    line-height: 50px;
+}
+.my-brand {
+  padding: 0 15px 0 0;
+}
+.my-brand img {
+    max-width: 200px;
+    display: block;
+}
+.my-collapse {
+  padding-top: 15px;
+}
+.my-collapse .navbar-nav li a {
+  color: #383e43;
+  font-size: 20px;
+  padding: 15px 22px;
+}
+.my-collapse .navbar-nav li.active a {
+  background-color: #fff;
+}
+.my-collapse .navbar-nav li.active:hover a,
+.my-collapse .navbar-nav li:hover a {
+  background-color: #fff;
+  border-bottom: 4px solid #00BFFC;
+}
+.my-collapse .navbar-nav li:last-child {
+  position: relative;
+}
+.my-collapse .navbar-nav li:last-child .my-badge {
+  color: red;
+  font-weight: 400;
+  background-color: #fff;
+  border: 1px solid red;
+  border-radius: 5px;
+  padding: 3px 5px;
+  position: absolute;
+  top: 10px;
+  right: -5px;
+} 
+
+/*轮播图*/
+#jmhz_banner {
+
+}
+/*pc*/
+#banner .carousel-inner > div.item > a.img_box {
+  /*让背景图片原比例显示 并且居中在屏幕当中*/
+  background-position: center center;
+  height: 410px;
+  display: block;
+}
+/*M*/
+#banner .carousel-inner > div.item > a.img_mobile,
+#banner .carousel-inner > div.item > a.img_mobile img {
+  width: 100%;
+  display: block;
+}
+
+/*主体*/
+.main-shop {
+  background-color: #F3F3F3;
+}
+/*最新公告*/
+.my-notice {
+  height: 40px;
+  border: 1px solid #e0e0e0;
+  border-top: 0;
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+.my-row {
+  line-height: 40px;
+}
+.my-row div:nth-child(1) {
+  border-right: 1px solid #e0e0e0;
+  text-align: center;
+}
+
+/*固收理财*/
+.my-matters {
+  margin-bottom: 10px;
+}
+.my-matters .my-mrow {
+  line-height: 40px;
+}
+.my-matters .my-mrow div:first-child {
+  font-size: 1.5em;
+  color: #000;
+}
+.my-matters .my-mrow div:nth-child(2) em {
+  color: #FC7923;
+}
+
+.left-product {
+  text-align: center;
+}
+
+.firm-product .left-product {
+  display: inline-block;
+  max-width: 100%; 
+  height: 336px;
+  background-color: #9BD6FF;
+  text-align: center;
+  position: relative;
+}
+.firm-product .left-product .left-a {
+  width: 100%;
+  display: block;
+ }
+
+.product-ul {
+  padding: 0;
+}
+.firm-product .product-ul li {
+  max-width: 100%;
+  text-align: center;
+}
+.firm-product .product-ul li a {
+  width: 100%;
+  display: inline-block;
+  font: 800 20px "microSoft Yahei";
+  color: #fff;
+  max-width: 100%;
+  text-align: center;
+}
+
+/* .left-a::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-right: 16px solid transparent;
+  border-bottom: 8px solid #06b5ff;
+  position: absolute;
+  top: -28px;
+  right: -34px;
+}
+.left-a::after{
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 16px solid #06b5ff;
+  border-bottom: 8px solid transparent;
+  position: absolute;
+  top: 300px;
+  right: -34px;
+} */
+.invest-item {
+  margin-top: 8px;
+  height: 320px;
+  border-right: 1px solid #e0e0e0;
+  background-color: #fff;
+  padding: 24px 20px;
+  position: relative;
+}
+/*进度条*/
+.take-progress {
+  height: 8px;
+  display: block;
+  margin: 8px auto;
+}
+.take-bar {
+  height: 8px;  
+}
+.new-hand {
+  width: 45px;
+  height: 45px;
+  background: url(../images/new-hand.png);
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+.invest-item .bot-box {
+  width: 100%;
+  height: 104px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 0 24px;
+}
+.rate {
+  overflow: hidden;
+}
+.l_rate, .r_rate {
+  width: 50%;
+  text-align: center;
+}
+.l_rate {
+  border-right: 1px solid #e0e0e0;
+}
+.coloe-orange {
+  color: #F39921;
+  font-size: 1.5em;
+} 
+.bid {
+  margin-top: 10px;
+}
+.bid button {
+  width: 100%;
+  border: none;
+}
+.bid button.deful {
+  background-color: #E3E3E3;
+}
+
+/*锦囊*/
+.firm-product .brocade {
+  background-color: #FA7862;
+}
+.row-left {
+  background-color: #fff;
+  height: 320px;
+  margin-top: 8px;
+  border-right: 1px solid #e0e0e0;
+  padding: 0;
+}
+.row-left-top {
+  height: 160px;
+  border-bottom: 1px solid #e0e0e0;
+}
+.row-left-bot {
+  height: 160px;
+}
+.row-left-top .pad-box {
+  padding: 30px 40px 0px 20px;
+}
+.row-left-top-left {
+  width: 20%;
+  height: 100px;
+  background-color: #fff;
+  text-align: center;
+}
+.row-left-top-right {
+  width: 80%;
+  height: 100px;
+  background-color: #fff;
+  padding-left: 10px;
+}
+.row-left-top-right p:first-child {
+  color: #333;
+  font-size: 14px;
+}
+.row-left-top-right p {
+  margin-bottom: 10px;
+}
+.row-left-top-right .div-info a {
+  margin-right: 10px;
+}
+/*急速开户*/
+.info-box {
+  height: 300px;
+  background-color: #fff;
+  margin-top: 40px;
+  padding: 0;
+}
+.info-box .info-item {
+  height: 300px;
+  text-align: center;
+}
+.info-box .info-item:nth-child(2) {
+  border-right: 1px solid #e0e0e0;
+  border-left: 1px solid #e0e0e0;
+}
+.info-item p {
+  margin: 20px;
+}
+.info-item p:first-child {
+  font-size: 22px;
+  color: #333;
+}
+.info-item-btn {
+  width: 50%;
+}
+.info-a {
+  display: inline-block;
+  width: 72px;
+  height: 72px;
+}
+.info-a img {
+  width: 100%;
+}
+
+/*合作机构*/
+.cooperation-box {
+  margin-top: 30px;
+  width: 100%;
+  height: 170px;
+  background: #fff;
+}
+.cooperation-info {
+  padding-top: 20px;
+  position: relative;
+}
+.cooperation-info p {
+  font-size: 20px;
+  color: #333;
+}
+.cooperation-info-box {
+  margin-top: 30px;
+  width: 100%;
+  height: 40px;
+  overflow: hidden;
+  padding: 0 20px;
+}
+.cooperation-info-box ul {
+  width: 2760px;
+  padding: 0;
+  overflow: hidden;
+  margin: 0;
+  position: relative;
+  left: 0;
+}
+.cooperation-info-box ul li {
+  list-style: none;
+  float: left;
+  padding: 0 22px;
+}
+.cooperation-info a.prev,
+.cooperation-info a.next {
+  display: inline-block;
+  position: absolute;
+  top: 88px;
+  font-size: 22px;
+  line-height: 20px;
+}
+.cooperation-info a.prev {
+  left: 15px;
+}
+.cooperation-info a.next {
+  right: 15px;
+}
